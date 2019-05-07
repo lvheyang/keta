@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
+import org.keta.ketadb.model.type.FieldType;
 
 public abstract class Field {
 
@@ -12,11 +13,11 @@ public abstract class Field {
   public static final String FIELD_INDEX = "_index";
   public static final String FIELD_TYPE = "_type";
 
-  private static final Set<String> rset =
+  private static final Set<String> reservedSet =
       new HashSet<>(Arrays.asList(FIELD_RAW, FIELD_INDEX, FIELD_TIME, FIELD_TYPE));
 
   public static boolean isReserved(String name) {
-    return rset.contains(name);
+    return reservedSet.contains(name);
   }
 
   private final String name;

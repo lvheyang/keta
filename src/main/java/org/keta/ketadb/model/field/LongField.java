@@ -1,6 +1,7 @@
 package org.keta.ketadb.model.field;
 
 import java.util.Date;
+import org.keta.ketadb.model.type.FieldType;
 
 public class LongField extends Field {
 

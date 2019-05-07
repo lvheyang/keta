@@ -1,9 +1,9 @@
-package org.keta.ketadb.model.field;
+package org.keta.ketadb.model.type;
 
 public enum FieldType {
   Date,
   Long,
   Double,
   String,
-  Boolean,
+  Boolean
 }

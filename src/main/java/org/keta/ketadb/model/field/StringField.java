@@ -2,6 +2,7 @@ package org.keta.ketadb.model.field;
 
 import java.util.Date;
 import org.joda.time.DateTime;
+import org.keta.ketadb.model.type.FieldType;
 
 public class StringField extends Field {
 
